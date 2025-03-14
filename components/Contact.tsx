@@ -16,12 +16,12 @@ export default function Contact() {
       </a>{' '}
       or{' '}
       <a
-        href='https://twitter.com/_evanwalter_/'
+        href='https://x.com/_evanwalter_/'
         className={textLinkColors}
         target='_blank'
         rel='noreferrer noopener'
       >
-        Twitter
+        X
       </a>
       !
     </p>

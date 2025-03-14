@@ -48,8 +48,8 @@ export default function Home() {
                   title: 'LinkedIn',
                 },
                 {
-                  href: 'https://twitter.com/_evanwalter_/',
-                  title: 'Twitter',
+                  href: 'https://x.com/_evanwalter_/',
+                  title: 'X',
                 },
                 {
                   href: 'https://github.com/evwalt/evanwalter.dev/',

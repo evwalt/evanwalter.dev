@@ -84,8 +84,8 @@ export default function Footer() {
                 title: 'LinkedIn',
               },
               {
-                href: 'https://twitter.com/_evanwalter_/',
-                title: 'Twitter',
+                href: 'https://x.com/_evanwalter_/',
+                title: 'X',
               },
             ].map(({ href, title }) => (
               <a
