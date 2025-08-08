@@ -62,21 +62,7 @@ export default function Home() {
           </div>
         </div>
 
-        <p className='italic max-md:text-center'>
-          I created this{' '}
-          <a
-            href='https://github.com/evwalt/evanwalter.dev/'
-            className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            open-source
-          </a>{' '}
-          web app with Next.js, React, and TypeScript. I recently started to add
-          test coverage with Cypress!
-        </p>
-
-        <div className='flex flex-col gap-y-3'>
+        <div className='flex flex-col gap-y-3 mt-8'>
           <h2 id='about' className='text-3xl font-bold sm:text-4xl'>
             About
           </h2>
