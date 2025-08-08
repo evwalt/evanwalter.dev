@@ -27,7 +27,7 @@ export default function Footer() {
             />
           </svg>
         </Link>
-        <div className='flex items-center justify-between gap-4 max-[379px]:flex-col'>
+        <div className='flex items-center justify-around gap-4 max-[379px]:flex-col'>
           <FooterLinksGroup addClassNames='max-[379px]:hidden'>
             {[
               { href: '/', title: 'Home' },
@@ -39,35 +39,6 @@ export default function Footer() {
                 {title}
               </Link>
             ))}
-          </FooterLinksGroup>
-          <FooterLinksGroup addClassNames='max-[379px]:hidden'>
-            {[
-              {
-                href: 'https://ghostbed.com/products/ghostbed-massage-mattress',
-                title: 'Product Page',
-              },
-              {
-                href: 'https://quiz-preview.vercel.app/',
-                title: 'Sales Funnel',
-              },
-              {
-                href: 'https://lens-starter-app.vercel.app/',
-                title: 'Lens Social App',
-              },
-            ].map(({ href, title }) => (
-              <a
-                key={uuidv4()}
-                href={href}
-                className={navLinkStyles}
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                {title}
-              </a>
-            ))}
-            <Link href='/dad-jokes' className={navLinkStyles}>
-              Dad Jokes
-            </Link>
           </FooterLinksGroup>
           <FooterLinksGroup>
             {[
