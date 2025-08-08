@@ -30,15 +30,11 @@ export default function Home() {
             <h2 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
               Software Engineer
             </h2>
-            <h3 className='md:whitespace-nowrap'>
-              Full Stack | Front End | Back End
+            <h3>
+              Full-Stack Engineer | Front-End Specialist | AI-Driven Web Apps
             </h3>
             <div className='flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center'>
               {[
-                {
-                  href: '/resume-evan-walter.pdf',
-                  title: 'Resume',
-                },
                 {
                   href: 'https://github.com/evwalt/',
                   title: 'GitHub',
@@ -46,10 +42,6 @@ export default function Home() {
                 {
                   href: 'https://linkedin.com/in/-evanwalter',
                   title: 'LinkedIn',
-                },
-                {
-                  href: 'https://x.com/_evanwalter_/',
-                  title: 'X',
                 },
                 {
                   href: 'https://github.com/evwalt/evanwalter.dev/',

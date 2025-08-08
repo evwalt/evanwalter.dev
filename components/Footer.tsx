@@ -43,16 +43,16 @@ export default function Footer() {
           <FooterLinksGroup>
             {[
               {
-                href: '/resume-evan-walter.pdf',
-                title: 'Resume',
-              },
-              {
                 href: 'https://github.com/evwalt/',
                 title: 'GitHub',
               },
               {
                 href: 'https://linkedin.com/in/-evanwalter',
                 title: 'LinkedIn',
+              },
+              {
+                href: 'https://github.com/evwalt/evanwalter.dev',
+                title: 'Source',
               },
               {
                 href: 'https://x.com/_evanwalter_/',
@@ -92,7 +92,7 @@ interface FooterLinksGroupProps {
 }
 
 export function FooterLinksGroup({
-  addClassNames,
+  addClassNames = '',
   children,
 }: FooterLinksGroupProps) {
   return (

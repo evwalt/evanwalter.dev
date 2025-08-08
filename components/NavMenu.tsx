@@ -69,13 +69,6 @@ export default function NavMenu() {
               }}
             />
           ))}
-          <NavItem
-            href='/resume-evan-walter.pdf'
-            text='Resume'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
           {isMobileScreen ? null : <ThemeButton />}
         </div>
       ) : null}
@@ -107,8 +100,8 @@ function NavItem({
       isMobileScreen
         ? 'w-full border-b border-neutral-700 p-1 text-black dark:text-white'
         : isActive
-        ? 'p-1 text-black dark:text-white'
-        : navLinkStyles
+          ? 'p-1 text-black dark:text-white'
+          : navLinkStyles
     }
     scroll-smooth font-semibold max-sm:py-3 sm:w-fit'
   `
