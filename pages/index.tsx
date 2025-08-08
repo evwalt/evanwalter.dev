@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex flex-col gap-y-3 mt-8'>
+        <div className='mt-8 flex flex-col gap-y-3'>
           <h2 id='about' className='text-3xl font-bold sm:text-4xl'>
             About
           </h2>

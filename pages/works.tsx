@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import Features from 'components/Features'
 import Work from 'components/works/Work'
 
 export default function Highlights() {
