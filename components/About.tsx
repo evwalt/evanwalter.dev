@@ -7,14 +7,8 @@ export default function About() {
   return (
     <div className='flex flex-col gap-y-2 text-lg'>
       <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold'>
-        I am a Full-stack Software Engineer. I have a high value for learning
-        and offering valuable contribution as a team member. I specialize in
-        TypeScript, React, and Tailwind CSS. With a background in Electrical
-        Engineering, I offer a unique attention to detail and creativity in
-        problem solving.
-      </p>
-      <p>
-        I had the privilege of appearing as a guest on{' '}
+        I am a software engineer focused on TypeScript, React, and web
+        technologies. I had the privilege of appearing as a guest on{' '}
         <a
           href='https://podcast.thereactshow.com/1764837/12142504'
           className={textLinkColors}
@@ -23,31 +17,37 @@ export default function About() {
         >
           The React Show
         </a>{' '}
-        <Link href='/podcast' className={textLinkColors}>
-          podcast
-        </Link>
-        !
-      </p>
-      <p>
-        I also enjoy exploring programming languages like{' '}
-        <a
-          href='https://www.rust-lang.org/'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          Rust
-        </a>{' '}
-        and{' '}
-        <a
-          href='https://go.dev/'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          Go
-        </a>
-        .
+        podcast!{' '}
+        <span>
+          I also enjoy exploring programming languages like{' '}
+          <a
+            href='https://www.rust-lang.org'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Rust
+          </a>
+          ,{' '}
+          <a
+            href='https://go.dev'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Go
+          </a>
+          , and{' '}
+          <a
+            href='https://dev.java'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Java
+          </a>
+          .
+        </span>
       </p>
       <p>
         Other than coding, I enjoy fitness, traveling, outdoor activities, and

@@ -13,8 +13,8 @@ export default function PageReference({ page }: PageReferenceProps) {
       If you&apos;d like to{' '}
       {page === 'works' ? (
         <span>
-          see some smaller projects I&apos;ve contributed to as well as projects
-          I&apos;ve created
+          see projects I&apos;ve contributed to as well as projects I&apos;ve
+          created
         </span>
       ) : (
         <span>learn more about me</span>
