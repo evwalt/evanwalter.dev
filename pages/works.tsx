@@ -23,7 +23,7 @@ export default function Highlights() {
                 <p className=''>
                   New personal works are coming soon. For now, take a look at my{' '}
                   <a
-                    href='https://podcast.thereactshow.com/1764837/12142504'
+                    href='https://github.com/evwalt'
                     className={textLinkColors}
                     target='_blank'
                     rel='noreferrer noopener'
