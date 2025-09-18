@@ -10,33 +10,36 @@ export default function Highlights() {
       <div className='flex flex-col gap-y-2'>
         <h1 className='mb-2 text-3xl font-bold md:text-4xl'>Works</h1>
 
-        <div className='flex flex-col gap-y-2'>
-          <h2
-            id='personal-works'
-            className='mt-4 text-2xl font-bold sm:text-3xl'
-          >
+        <div className='flex flex-col space-y-2'>
+          <h2 id='personal-works' className='text-2xl font-bold sm:text-3xl'>
             Personal Works
           </h2>
-          <div className='flex flex-col gap-y-2'>
-            <div className='my-4 text-2xl'>
-              <Work addClassNames='from-blue-500 via-purple-500 to-pink-500'>
-                <p className=''>
-                  New personal works are coming soon. For now, take a look at my{' '}
-                  <a
-                    href='https://github.com/evwalt'
-                    className={textLinkColors}
-                    target='_blank'
-                    rel='noreferrer noopener'
-                  >
-                    GitHub
-                  </a>{' '}
-                  for my most up-to-date projects.
-                </p>
-              </Work>
-            </div>
+          <div className='flex flex-col gap-y-1.5'>
+            <Work addClassNames='from-blue-500 via-purple-500 to-pink-500'>
+              <h3 className='text-xl font-bold sm:text-2xl'>StoryLens</h3>
+              <p>{`In my ongoing project, StoryLens, I’m architecting a Next.js/React + Node/Prisma stack with standardized data flows and AI-driven personalization features, giving me hands-on experience designing adaptive, user-focused systems.`}</p>
+              <ul className='ml-3 list-inside list-disc'>
+                <li>{`Architected full-stack workflows with Next.js/React, Zustand, Prisma, and PostgreSQL.`}</li>
+                <li>{`Translated product goals into efficient data models, APIs, and scalable UI.`}</li>
+                <li>{`Built reusable component and API libraries to enable rapid expansion.`}</li>
+                <li>{`Prototyped AI-driven onboarding and recall workflows with user-friendly interfaces.`}</li>
+              </ul>
+            </Work>
+            <p className='pt-3'>
+              For more personal works, take a look at my{' '}
+              <a
+                href='https://github.com/evwalt'
+                className={textLinkColors}
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                GitHub
+              </a>{' '}
+              for my most up-to-date projects.
+            </p>
           </div>
 
-          <h2 id='ghostbed' className='text-2xl font-bold sm:text-3xl'>
+          <h2 id='ghostbed' className='pt-2 text-2xl font-bold sm:text-3xl'>
             GhostBed Highlights
           </h2>
           {[
@@ -46,12 +49,7 @@ export default function Highlights() {
               linkText: 'Sales Funnel (Preview)',
               body: (
                 <p>
-                  I created this Sales Funnel App with Next.js, React, and
-                  TypeScript. I wrote the full implementation with completely
-                  new code along with some updates to the business logic. We
-                  hope to go live with the new code I wrote after we complete
-                  our migration efforts to a headless web application. Feel free
-                  to check out the{' '}
+                  {`I created this Sales Funnel App with Next.js, React, and TypeScript. I wrote the full implementation with completely new code along with some updates to the business logic. We hope to go live with the new code I wrote after we complete our migration efforts to a headless web application. Feel free to check out the `}
                   <a
                     href='https://www.ghostbed.com/pages/mattress-quiz'
                     className={textLinkColors}
@@ -67,7 +65,7 @@ export default function Highlights() {
           ].map(({ url, title, linkText, body }) => (
             <div
               key={uuidv4()}
-              className='mt-4 flex flex-col gap-y-2 rounded-lg border-2 border-[#5FA405] px-5 py-4'
+              className='flex flex-col gap-y-1.5 rounded-lg border-2 border-[#5FA405] px-5 py-4'
             >
               <h3 className='text-xl font-bold sm:text-2xl'>{title}</h3>
               <p>
