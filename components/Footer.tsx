@@ -51,12 +51,12 @@ export default function Footer() {
                 title: 'LinkedIn',
               },
               {
-                href: 'https://github.com/evwalt/evanwalter.dev',
-                title: 'Source',
-              },
-              {
                 href: 'https://x.com/_evanwalter_/',
                 title: 'X',
+              },
+              {
+                href: 'https://github.com/evwalt/evanwalter.dev',
+                title: 'Source',
               },
             ].map(({ href, title }) => (
               <a
