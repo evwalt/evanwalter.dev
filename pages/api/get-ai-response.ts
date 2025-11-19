@@ -1,9 +1,9 @@
-const { Configuration, OpenAIApi } = require('openai')
+const { Configuration, OpenAIApi } = require('openai');
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
-})
-const openai = new OpenAIApi(configuration)
+});
+const openai = new OpenAIApi(configuration);
 
 export default async function handler(req: any, res: any) {
   const response = await openai.createCompletion({
@@ -11,7 +11,7 @@ export default async function handler(req: any, res: any) {
     prompt: `${req.query.prompt}`,
     temperature: 0.7,
     max_tokens: 500,
-  })
+  });
 
-  res.status(200).json(response.data)
+  res.status(200).json(response.data);
 }

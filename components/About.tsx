@@ -1,19 +1,19 @@
-import Link from 'next/link'
-import { useTextLinkContext } from 'components/TextLinkProvider'
+import Link from 'next/link';
+import { useTextLinkContext } from 'components/TextLinkProvider';
 
 export default function About() {
-  const textLinkColors = useTextLinkContext()
+  const textLinkColors = useTextLinkContext();
 
   return (
-    <div className='flex flex-col gap-y-2 text-lg'>
-      <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold'>
-        I am a software engineer focused on TypeScript, React, and web
-        technologies. I had the privilege of appearing as a guest on{' '}
+    <div className="flex flex-col gap-y-2 text-lg">
+      <p className="first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold">
+        I am a software engineer focused on TypeScript, React, and web technologies. I had the
+        privilege of appearing as a guest on{' '}
         <a
-          href='https://podcast.thereactshow.com/1764837/12142504'
+          href="https://podcast.thereactshow.com/1764837/12142504"
           className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
+          target="_blank"
+          rel="noreferrer noopener"
         >
           The React Show
         </a>{' '}
@@ -21,28 +21,28 @@ export default function About() {
         <span>
           I also enjoy exploring programming languages like{' '}
           <a
-            href='https://www.rust-lang.org'
+            href="https://www.rust-lang.org"
             className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
+            target="_blank"
+            rel="noreferrer noopener"
           >
             Rust
           </a>
           ,{' '}
           <a
-            href='https://go.dev'
+            href="https://go.dev"
             className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
+            target="_blank"
+            rel="noreferrer noopener"
           >
             Go
           </a>
           , and{' '}
           <a
-            href='https://dev.java'
+            href="https://dev.java"
             className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
+            target="_blank"
+            rel="noreferrer noopener"
           >
             Java
           </a>
@@ -50,9 +50,9 @@ export default function About() {
         </span>
       </p>
       <p>
-        Other than coding, I enjoy fitness, traveling, outdoor activities, and
-        spending time with family and friends.
+        Other than coding, I enjoy fitness, traveling, outdoor activities, and spending time with
+        family and friends.
       </p>
     </div>
-  )
+  );
 }

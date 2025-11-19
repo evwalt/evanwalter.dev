@@ -1,33 +1,33 @@
-import { useTheme } from 'next-themes'
-import { useState, useEffect } from 'react'
-import { useNavLinkContext } from 'components/NavLinkProvider'
+import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
+import { useNavLinkContext } from 'components/NavLinkProvider';
 
 export default function ThemeButton() {
-  const [mounted, setMounted] = useState(false)
-  const { resolvedTheme, setTheme } = useTheme()
-  const navLinkStyles = useNavLinkContext()
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+  const navLinkStyles = useNavLinkContext();
 
-  useEffect(() => setMounted(true), [])
+  useEffect(() => setMounted(true), []);
 
   return (
     <>
       {mounted ? (
         <button
-          aria-label='Toggle Dark Mode'
-          type='button'
+          aria-label="Toggle Dark Mode"
+          type="button"
           className={`${navLinkStyles} py-1 pl-1`}
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           <svg
-            className='mx-auto h-6 w-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
+            className="mx-auto h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth={2}
               d={
                 resolvedTheme === 'dark'
@@ -39,5 +39,5 @@ export default function ThemeButton() {
         </button>
       ) : null}
     </>
-  )
+  );
 }

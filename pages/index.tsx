@@ -1,39 +1,35 @@
-import { v4 as uuidv4 } from 'uuid'
-import Image from 'next/image'
-import { useTextLinkContext } from 'components/TextLinkProvider'
-import PageReference from 'components/PageReference'
-import About from 'components/About'
+import { v4 as uuidv4 } from 'uuid';
+import Image from 'next/image';
+import { useTextLinkContext } from 'components/TextLinkProvider';
+import PageReference from 'components/PageReference';
+import About from 'components/About';
 
 export default function Home() {
-  const textLinkColors = useTextLinkContext()
+  const textLinkColors = useTextLinkContext();
 
   return (
     <>
-      <main className='flex flex-col gap-y-8'>
-        <div className='flex flex-col items-center justify-center gap-8 md:flex-row'>
-          <div className='group relative'>
-            <div className='absolute -inset-[0.25rem] h-[13rem] w-[13rem] animate-pulse rounded-full bg-orange-400 blur transition duration-300 group-hover:bg-orange-600 max-[248px]:hidden'></div>
-            <div className='absolute -inset-[0.25rem] h-[13rem] w-[13rem] animate-pulse rounded-full bg-orange-600 blur max-[248px]:hidden'></div>
+      <main className="flex flex-col gap-y-8">
+        <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
+          <div className="group relative">
+            <div className="absolute -inset-[0.25rem] h-[13rem] w-[13rem] animate-pulse rounded-full bg-orange-400 blur transition duration-300 group-hover:bg-orange-600 max-[248px]:hidden"></div>
+            <div className="absolute -inset-[0.25rem] h-[13rem] w-[13rem] animate-pulse rounded-full bg-orange-600 blur max-[248px]:hidden"></div>
             <Image
-              className='relative rounded-full transition'
-              src='/head-shot.jpg'
-              alt='Evan Walter | Software Engineer'
+              className="relative rounded-full transition"
+              src="/head-shot.jpg"
+              alt="Evan Walter | Software Engineer"
               width={200}
               height={200}
               priority
             />
           </div>
-          <div className='flex flex-col items-center justify-center gap-y-3 text-center md:items-start md:text-left'>
-            <h1 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
-              Evan Walter
-            </h1>
-            <h2 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
+          <div className="flex flex-col items-center justify-center gap-y-3 text-center md:items-start md:text-left">
+            <h1 className="text-3xl font-bold md:whitespace-nowrap md:text-4xl">Evan Walter</h1>
+            <h2 className="text-3xl font-bold md:whitespace-nowrap md:text-4xl">
               Software Engineer
             </h2>
-            <h3>
-              Frontend Specialist | Full-Stack Capable | AI-Driven Web Apps
-            </h3>
-            <div className='flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center'>
+            <h3>Frontend Specialist | Full-Stack Capable | AI-Driven Web Apps</h3>
+            <div className="flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center">
               {[
                 {
                   href: 'https://github.com/evwalt/',
@@ -52,8 +48,8 @@ export default function Home() {
                   key={uuidv4()}
                   href={href}
                   className={textLinkColors}
-                  target='_blank'
-                  rel='noreferrer noopener'
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
                   {title}
                 </a>
@@ -62,8 +58,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='mt-8 flex flex-col gap-y-3'>
-          <h2 id='about' className='text-3xl font-bold sm:text-4xl'>
+        <div className="mt-8 flex flex-col gap-y-3">
+          <h2 id="about" className="text-3xl font-bold sm:text-4xl">
             About
           </h2>
           <About />
@@ -72,5 +68,5 @@ export default function Home() {
         <PageReference page={'works'} />
       </main>
     </>
-  )
+  );
 }

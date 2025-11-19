@@ -1,21 +1,18 @@
-import Link from 'next/link'
-import { useTextLinkContext } from 'components/TextLinkProvider'
+import Link from 'next/link';
+import { useTextLinkContext } from 'components/TextLinkProvider';
 
 interface PageReferenceProps {
-  page: string
+  page: string;
 }
 
 export default function PageReference({ page }: PageReferenceProps) {
-  const textLinkColors = useTextLinkContext()
+  const textLinkColors = useTextLinkContext();
 
   return (
-    <p className='text-lg'>
+    <p className="text-lg">
       If you&apos;d like to{' '}
       {page === 'works' ? (
-        <span>
-          see projects I&apos;ve contributed to as well as projects I&apos;ve
-          created
-        </span>
+        <span>see projects I&apos;ve contributed to as well as projects I&apos;ve created</span>
       ) : (
         <span>learn more about me</span>
       )}
@@ -25,5 +22,5 @@ export default function PageReference({ page }: PageReferenceProps) {
       </Link>{' '}
       page.
     </p>
-  )
+  );
 }
