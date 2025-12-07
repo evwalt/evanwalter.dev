@@ -16,7 +16,7 @@ export default function Home() {
             <div className="absolute -inset-[0.25rem] h-[13rem] w-[13rem] animate-pulse rounded-full bg-orange-600 blur max-[248px]:hidden"></div>
             <Image
               className="relative rounded-full transition"
-              src="/head-shot.jpg"
+              src="/head-shot-2.jpg"
               alt="Evan Walter | Software Engineer"
               width={200}
               height={200}
