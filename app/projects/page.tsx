@@ -2,32 +2,44 @@ import Link from 'next/link';
 
 const projects = [
   {
-    slug: 'taskfusionlite',
-    title: 'TaskFusionLite',
-    blurb: 'Electron app UX with Vim-style workflows.',
+    slug: 'internal-ai-tool',
+    title: 'Internal AI Desktop Tool',
+    blurb: 'Early-stage internal product focused on RAG, UX, and constrained environments.',
   },
   {
-    slug: 'rag-desktop',
-    title: 'On-device RAG Desktop UI',
-    blurb: 'Search + citations UI for internal LLM workflows.',
+    slug: 'portfolio-site',
+    title: 'Personal Portfolio (This Site)',
+    blurb:
+      'A deliberately simple Next.js site focused on clarity, iteration, and long-term ownership.',
+  },
+  {
+    slug: 'experimental-wip',
+    title: 'Experimental Side Project (WIP)',
+    blurb: 'A space for exploration—learning, prototypes, and ideas still forming.',
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <main className="space-y-6">
-      <h1 className="text-2xl font-semibold tracking-tight">Projects</h1>
+    <div className="space-y-8">
+      <header className="space-y-2">
+        <h1 className="text-3xl font-semibold tracking-tight">Projects</h1>
+        <p className="text-muted-foreground">
+          A small selection of work that reflects how I think about problems, constraints, and
+          tradeoffs.
+        </p>
+      </header>
 
-      <ul className="space-y-3">
+      <ul className="space-y-6">
         {projects.map((p) => (
-          <li key={p.slug} className="space-y-1">
-            <Link className="underline" href={`/projects/${p.slug}`}>
+          <li key={p.slug} className="rounded-lg border p-5">
+            <Link href={`/projects/${p.slug}`} className="font-medium underline">
               {p.title}
             </Link>
-            <p className="text-muted-foreground text-sm">{p.blurb}</p>
+            <p className="text-muted-foreground mt-2 text-sm">{p.blurb}</p>
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }
