@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 const projects = [
@@ -86,6 +87,13 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
   return (
     <main className="space-y-10">
+      <Link
+        href="/projects"
+        className="text-muted-foreground mb-2 inline-block text-sm underline underline-offset-4"
+      >
+        ← Back to projects
+      </Link>
+
       <header className="space-y-2">
         <h1 className="text-2xl font-semibold tracking-tight">{project.title}</h1>
         <p className="text-muted-foreground">{project.summary}</p>
