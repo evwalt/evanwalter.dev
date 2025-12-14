@@ -22,8 +22,10 @@ const projects = [
 
 type Params = { slug: string };
 
-export default function ProjectDetailPage({ params }: { params: Params }) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default async function ProjectDetailPage({ params }: { params: Promise<Params> }) {
+  const { slug } = await params;
+
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return notFound();
 
   return (
