@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import { Geist_Mono, Noto_Sans } from 'next/font/google';
 import './globals.css';
 
+import { SiteHeader } from '@/components/site-header';
+import { SiteFooter } from '@/components/site-footer';
+import { Container } from '@/components/container';
+
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
@@ -24,7 +28,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable} ${notoSans.variable} antialiased`}>{children}</body>
+      <body
+        suppressHydrationWarning
+        className={`${geistMono.variable} ${notoSans.variable} antialiased`}
+      >
+        <div className="flex min-h-dvh flex-col">
+          <SiteHeader />
+
+          <main className="flex-1 py-10">
+            <Container>{children}</Container>
+          </main>
+
+          <SiteFooter />
+        </div>
+      </body>
     </html>
   );
 }
