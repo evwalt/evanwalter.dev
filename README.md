@@ -1,4 +1,4 @@
-# evanwalter.dev (revamp)
+# evanwalter.dev
 
 Personal site for writing, projects, and a concise professional overview.
 
