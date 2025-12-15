@@ -16,7 +16,7 @@ export function SiteHeader() {
           Evan Walter
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-5">
           <nav className="flex items-center gap-4 text-sm">
             {nav.map((item) => (
               <Link
