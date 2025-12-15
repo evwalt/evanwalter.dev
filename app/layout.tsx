@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist_Mono, Noto_Sans } from 'next/font/google';
 import './globals.css';
 
+import { ThemeProvider } from '@/components/theme-provider';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Container } from '@/components/container';
@@ -27,20 +28,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        suppressHydrationWarning
-        className={`${geistMono.variable} ${notoSans.variable} antialiased`}
-      >
-        <div className="flex min-h-dvh flex-col">
-          <SiteHeader />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistMono.variable} ${notoSans.variable} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-dvh flex-col">
+            <SiteHeader />
 
-          <main className="flex-1 py-10">
-            <Container>{children}</Container>
-          </main>
+            <main className="flex-1 py-10">
+              <Container>{children}</Container>
+            </main>
 
-          <SiteFooter />
-        </div>
+            <SiteFooter />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

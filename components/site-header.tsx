@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Container } from '@/components/container';
+import { ModeToggle } from '@/components/mode-toggle';
 
 const nav = [
   { href: '/projects', label: 'Projects' },
@@ -26,6 +27,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
+        <ModeToggle />
       </Container>
     </header>
   );
