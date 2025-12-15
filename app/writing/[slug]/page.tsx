@@ -11,7 +11,10 @@ export default async function WritingPostPage({ params }: { params: Promise<{ sl
   return (
     <main className="space-y-8">
       <div className="space-y-2">
-        <Link className="mb-2 inline-block text-sm underline underline-offset-4" href="/writing">
+        <Link
+          href="/writing"
+          className="text-muted-foreground mb-3 inline-block text-sm underline underline-offset-4"
+        >
           ← Writing
         </Link>
         <h1 className="text-3xl font-semibold tracking-tight">{post.title}</h1>
