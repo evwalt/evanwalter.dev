@@ -14,7 +14,10 @@ export default function WritingPage() {
       <ul className="space-y-6">
         {writingPosts.map((p) => (
           <li key={p.slug} className="rounded-lg border p-5">
-            <Link className="font-medium underline underline-offset-4" href={`/writing/${p.slug}`}>
+            <Link
+              className="hover:text-primary font-medium underline underline-offset-4"
+              href={`/writing/${p.slug}`}
+            >
               {p.title}
             </Link>
             <p className="text-muted-foreground mt-2 text-sm">{p.description}</p>

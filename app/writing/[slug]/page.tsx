@@ -13,7 +13,7 @@ export default async function WritingPostPage({ params }: { params: Promise<{ sl
       <div className="space-y-2">
         <Link
           href="/writing"
-          className="text-muted-foreground mb-3 inline-block text-sm underline underline-offset-4"
+          className="hover:text-primary text-muted-foreground mb-3 inline-block text-sm underline underline-offset-4"
         >
           ← Writing
         </Link>
