@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <main className="space-y-10">
       <header className="space-y-2">
-        <h1 className="text-3xl font-semibold tracking-tight">About</h1>
+        <h1 className="text-primary text-3xl font-semibold tracking-tight">About</h1>
         <p className="text-muted-foreground">Context that doesn’t belong in a case study.</p>
       </header>
 

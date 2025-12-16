@@ -12,7 +12,7 @@ export function SiteHeader() {
   return (
     <header className="border-b">
       <Container className="flex h-14 items-center justify-between">
-        <Link href="/" className="font-semibold tracking-tight">
+        <Link href="/" className="hover:text-primary font-semibold tracking-tight">
           Evan Walter
         </Link>
 
@@ -22,7 +22,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 {item.label}
               </Link>

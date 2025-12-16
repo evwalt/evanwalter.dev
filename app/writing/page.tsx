@@ -5,7 +5,7 @@ export default function WritingPage() {
   return (
     <main className="space-y-8">
       <header className="space-y-2">
-        <h1 className="text-3xl font-semibold tracking-tight">Writing</h1>
+        <h1 className="text-primary text-3xl font-semibold tracking-tight">Writing</h1>
         <p className="text-muted-foreground">
           Notes on frontend engineering, product decisions, and shipping.
         </p>
