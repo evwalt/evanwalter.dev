@@ -17,17 +17,38 @@ export function SiteHeader() {
         </Link>
 
         <div className="flex items-center gap-5">
-          <nav className="flex items-center gap-4 text-sm">
-            {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          <div className="flex items-center gap-4 text-sm">
+            <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+              Home
+            </Link>
+            <a
+              href="https://github.com/evwalt"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/-evanwalter"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              LinkedIn
+            </a>
+          </div>
+          {/* <nav className="flex items-center gap-4 text-sm"> */}
+          {/*   {nav.map((item) => ( */}
+          {/*     <Link */}
+          {/*       key={item.href} */}
+          {/*       href={item.href} */}
+          {/*       className="text-muted-foreground hover:text-primary transition-colors" */}
+          {/*     > */}
+          {/*       {item.label} */}
+          {/*     </Link> */}
+          {/*   ))} */}
+          {/* </nav> */}
           <ModeToggle />
         </div>
       </Container>
