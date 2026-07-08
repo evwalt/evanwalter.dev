@@ -20,7 +20,7 @@ const notoSans = Noto_Sans({
 export const metadata: Metadata = {
   title: 'Evan Walter',
   description:
-    'Frontend Engineer building scalable, accessible UI systems for high-impact products • React • TypeScript • Performance • Accessibility',
+    'Evan Walter is a software engineer and independent developer building AI-powered applications, developer tools, and SaaS products.',
 };
 
 export default function RootLayout({

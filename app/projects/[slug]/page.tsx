@@ -38,7 +38,7 @@ const projects = [
       'I wanted a personal site that clearly represented how I think and work, without the overhead or performative polish of most developer portfolios.',
 
     constraints: [
-      'Limited time alongside job search and other commitments',
+      'Limited time alongside other projects and commitments',
       'Desire to avoid over-designing or premature abstraction',
       'Content needed to evolve over time without rewrites',
     ],
