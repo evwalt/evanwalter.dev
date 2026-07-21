@@ -6,32 +6,36 @@ export default function HomePage() {
       <section className="space-y-3">
         <h1 className="text-4xl font-semibold tracking-tight">Evan Walter</h1>
         <h2 className="text-3xl font-semibold tracking-tight">
-          Software Engineer, Independent Builder
+          Independent Builder, Software Engineer
         </h2>
         <p className="text-muted-foreground text-lg">
-          {`I’m an independent software developer building AI-powered applications, developer tools, and SaaS products. I also bring several years of production engineering experience across React, TypeScript, and full-stack systems—and I’m open to full-time software engineering roles where that depth would be valuable.`}
+          {`I build software products, currently shipping developer tools and AI-powered applications as an independent maker. I also bring several years of production engineering experience across React, TypeScript, and full-stack systems, and I’m open to full-time engineering roles where that depth would be valuable.`}
         </p>
       </section>
 
-      {/* <section className="space-y-4"> */}
-      {/*   <h2 className="text-xl font-semibold">Current Projects</h2> */}
-      {/*   <div className="rounded-lg border p-5"> */}
-      {/*     <div className="flex items-start justify-between gap-6"> */}
-      {/*       <div className="space-y-2"> */}
-      {/*         <div className="flex items-center gap-2"> */}
-      {/*           <h3 className="font-medium">RLS Guard</h3> */}
-      {/*           <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs"> */}
-      {/*             Active */}
-      {/*           </span> */}
-      {/*         </div> */}
-      {/*         <p className="text-muted-foreground text-sm"> */}
-      {/*           {`A developer tool for managing and auditing Postgres Row-Level Security policies, built to make RLS easier to reason about and safer to ship. Currently in active development.`} */}
-      {/*         </p> */}
-      {/*       </div> */}
-      {/*     </div> */}
-      {/*   </div> */}
-      {/* </section> */}
-      {/**/}
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold">Building</h2>
+        <div className="rounded-lg border p-5">
+          <div className="flex items-center gap-2">
+            <h3 className="font-medium">RLS Guard</h3>
+            <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
+              Active
+            </span>
+          </div>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {`A developer tool that scans Postgres databases for Row-Level Security gaps and generates ready-to-run remediation SQL.`}
+          </p>
+          <a
+            href="https://rls-guard.evanwalter.dev"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary mt-3 inline-block text-sm underline"
+          >
+            rls-guard.evanwalter.dev
+          </a>
+        </div>
+      </section>
+
       {/* <section className="grid gap-4 sm:grid-cols-3"> */}
       {/*   <Link */}
       {/*     href="/projects" */}
