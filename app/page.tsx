@@ -9,12 +9,12 @@ export default function HomePage() {
           Independent Builder, Software Engineer
         </h2>
         <p className="text-muted-foreground text-lg">
-          {`I build software products, currently shipping developer tools and AI-powered applications as an independent maker. I also bring several years of production engineering experience across React, TypeScript, and full-stack systems, and I’m open to full-time engineering roles where that depth would be valuable.`}
+          {`I build software products, currently shipping developer tools and AI-powered applications as an independent maker. Previously, I built production software for enterprise customers as a software engineer.`}
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-xl font-semibold">Building</h2>
+        <h2 className="text-xl font-semibold">Projects</h2>
         <div className="rounded-lg border p-5">
           <div className="flex items-center gap-2">
             <h3 className="font-medium">RLS Guard</h3>
