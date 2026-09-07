@@ -34,6 +34,25 @@ export default function HomePage() {
             rls-guard.evanwalter.dev
           </a>
         </div>
+        <div className="rounded-lg border p-5">
+          <div className="flex items-center gap-2">
+            <h3 className="font-medium">Family Follow-Through</h3>
+            <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
+              Active
+            </span>
+          </div>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {`A personally delivered 14-day pilot that helps an independently living parent follow through on walks they already want to take.`}
+          </p>
+          <a
+            href="https://followthrough.evanwalter.dev"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary mt-3 inline-block text-sm underline"
+          >
+            followthrough.evanwalter.dev
+          </a>
+        </div>
       </section>
 
       {/* <section className="grid gap-4 sm:grid-cols-3"> */}
