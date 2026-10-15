@@ -17,6 +17,25 @@ export default function HomePage() {
         <h2 className="text-xl font-semibold">Projects</h2>
         <div className="rounded-lg border p-5">
           <div className="flex items-center gap-2">
+            <h3 className="font-medium">GenaWatt</h3>
+            <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
+              Active
+            </span>
+          </div>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {`A client-commissioned web app that lets California electricity customers upload an SDG&E bill, see if they're overpaying, and pay to be moved to a better rate plan.`}
+          </p>
+          <a
+            href="https://genawatt.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary mt-3 inline-block text-sm underline"
+          >
+            genawatt.com
+          </a>
+        </div>
+        <div className="rounded-lg border p-5">
+          <div className="flex items-center gap-2">
             <h3 className="font-medium">RLS Guard</h3>
             <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
               Active
