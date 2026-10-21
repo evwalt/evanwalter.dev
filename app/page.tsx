@@ -17,6 +17,25 @@ export default function HomePage() {
         <h2 className="text-xl font-semibold">Projects</h2>
         <div className="rounded-lg border p-5">
           <div className="flex items-center gap-2">
+            <h3 className="font-medium">Ambler</h3>
+            <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
+              Active
+            </span>
+          </div>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {`A walking app that generates a 10, 20 or 30 minute loop from your door, past the quiet streets, parks and small sights nearby.`}
+          </p>
+          <a
+            href="https://ambler.website"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary mt-3 inline-block text-sm underline"
+          >
+            ambler.website
+          </a>
+        </div>
+        <div className="rounded-lg border p-5">
+          <div className="flex items-center gap-2">
             <h3 className="font-medium">GenaWatt</h3>
             <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
               Active
