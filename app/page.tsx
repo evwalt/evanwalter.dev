@@ -23,7 +23,7 @@ export default function HomePage() {
             </span>
           </div>
           <p className="text-muted-foreground mt-2 text-sm">
-            {`A walking app that generates a 10, 20 or 30 minute loop from your door, past the quiet streets, parks and small sights nearby.`}
+            {`A walking app in the works that plans a loop from where you are, for however long you want to walk, past the quiet streets, parks and small sights nearby.`}
           </p>
           <a
             href="https://ambler.website"
