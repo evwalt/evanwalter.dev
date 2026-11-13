@@ -36,6 +36,25 @@ export default function HomePage() {
         </div>
         <div className="rounded-lg border p-5">
           <div className="flex items-center gap-2">
+            <h3 className="font-medium">Catalog Audit</h3>
+            <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
+              Active
+            </span>
+          </div>
+          <p className="text-muted-foreground mt-2 text-sm">
+            {`A free tool that checks a Shopify store's whole catalog for SEO gaps, with fix guides an AI agent writes and fact-checks against primary sources daily.`}
+          </p>
+          <a
+            href="https://catalogaudit.dev"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary mt-3 inline-block text-sm underline"
+          >
+            catalogaudit.dev
+          </a>
+        </div>
+        <div className="rounded-lg border p-5">
+          <div className="flex items-center gap-2">
             <h3 className="font-medium">GenaWatt</h3>
             <span className="text-muted-foreground rounded-full border px-2 py-0.5 text-xs">
               Active
