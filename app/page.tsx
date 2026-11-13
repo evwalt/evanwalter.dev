@@ -42,7 +42,7 @@ export default function HomePage() {
             </span>
           </div>
           <p className="text-muted-foreground mt-2 text-sm">
-            {`A free tool that checks a Shopify store's whole catalog for SEO gaps, with fix guides an AI agent writes and fact-checks against primary sources daily.`}
+            {`A Shopify catalog SEO product: a free instant audit, a paid full report, and fix guides an AI agent writes and fact-checks against primary sources daily.`}
           </p>
           <a
             href="https://catalogaudit.dev"
