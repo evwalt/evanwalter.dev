@@ -30,7 +30,7 @@ export function SiteHeader() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/-evanwalter"
+              href="https://www.linkedin.com/in/evanwalterdev"
               target="_blank"
               rel="noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
