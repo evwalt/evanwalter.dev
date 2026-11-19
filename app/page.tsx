@@ -25,14 +25,19 @@ export default function HomePage() {
           <p className="text-muted-foreground mt-2 text-sm">
             {`A deterministic security layer that wraps an LLM agent's tool calls: JWT session binding against cross-tenant access, SSRF defense, and secret/PII redaction, with a red-team suite mapped to the OWASP Top 10 for LLMs and SAST/SCA/secret-scanning CI.`}
           </p>
-          <a
-            href="https://github.com/evwalt/mcp-guardrail-gateway"
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary mt-3 inline-block text-sm underline"
-          >
-            github.com/evwalt/mcp-guardrail-gateway
-          </a>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            <a
+              href="https://github.com/evwalt/mcp-guardrail-gateway"
+              target="_blank"
+              rel="noreferrer"
+              className="text-primary underline"
+            >
+              github.com/evwalt/mcp-guardrail-gateway
+            </a>
+            <Link href="/writing/mcp-guardrail-gateway-findings" className="text-primary underline">
+              Read the write-up
+            </Link>
+          </div>
         </div>
         <div className="rounded-lg border p-5">
           <div className="flex items-center gap-2">

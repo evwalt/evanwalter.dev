@@ -12,14 +12,26 @@ export function SiteHeader() {
   return (
     <header className="border-b">
       <Container className="flex h-14 items-center justify-between">
-        <Link href="/" className="hover:text-primary font-semibold tracking-tight">
+        <Link
+          href="/"
+          className="hover:text-primary font-semibold tracking-tight whitespace-nowrap"
+        >
           Evan Walter
         </Link>
 
-        <div className="flex items-center gap-5">
-          <div className="flex items-center gap-4 text-sm">
-            <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+        <div className="flex items-center gap-3 sm:gap-5">
+          <div className="flex items-center gap-3 text-sm sm:gap-4">
+            <Link
+              href="/"
+              className="text-muted-foreground hover:text-primary hidden transition-colors sm:inline"
+            >
               Home
+            </Link>
+            <Link
+              href="/writing"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              Writing
             </Link>
             <a
               href="https://github.com/evwalt"
