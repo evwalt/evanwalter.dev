@@ -23,7 +23,7 @@ export default function ProjectsPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-2">
-        <h1 className="text-primary text-3xl font-semibold tracking-tight">Projects</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">Projects</h1>
         <p className="text-muted-foreground">
           A small selection of work that reflects how I think about problems, constraints, and
           tradeoffs.
