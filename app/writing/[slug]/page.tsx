@@ -1,11 +1,32 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { writingPosts } from '@/content/writing-posts';
+import { getAllPosts, getPost } from '@/lib/writing';
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getAllPosts().map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const post = getPost((await params).slug);
+  if (!post) return {};
+  return {
+    title: post.title,
+    description: post.description,
+    robots: post.unlisted ? { index: false } : undefined,
+  };
+}
 
 export default async function WritingPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 
-  const post = writingPosts.find((p) => p.slug === slug);
+  const post = getPost(slug);
   if (!post) return notFound();
 
   return (
@@ -21,7 +42,11 @@ export default async function WritingPostPage({ params }: { params: Promise<{ sl
         <p className="text-muted-foreground text-sm">{post.date}</p>
       </div>
 
-      <article className="prose prose-neutral dark:prose-invert max-w-none">{post.body}</article>
+      {/* Trusted content: Markdown files committed to this repo. */}
+      <article
+        className="prose prose-neutral dark:prose-invert prose-code:before:content-none prose-code:after:content-none max-w-none"
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      />
     </main>
   );
 }
